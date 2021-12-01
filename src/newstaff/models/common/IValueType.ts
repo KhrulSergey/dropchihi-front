@@ -1,0 +1,1 @@
+export type IValueType = "INTEGER" | "BOOLEAN" | "DOUBLE" | "LONG" | "STRING";

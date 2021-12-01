@@ -1,0 +1,18 @@
+export type Place =
+  | "NONE"
+  | "FIRST"
+  | "SECOND"
+  | "THIRD"
+  | "FOURTH"
+  | "FIFTH"
+  | "SIXTH"
+  | "SEVENTH"
+  | "EIGHTH"
+  | "NINTH"
+  | "TENTH"
+  | "ELEVENTH"
+  | "TWELFTH"
+  | "THIRTEENTH"
+  | "FOURTEENTH"
+  | "FIFTEENTH"
+  | "SIXTEENTH";
