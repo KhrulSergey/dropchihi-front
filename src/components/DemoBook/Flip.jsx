@@ -1,9 +1,9 @@
-import "./flip.css";
-import React from "react";
+import './flip.css';
+import React from 'react';
 
-import FlipPage from "react-flip-page";
-import pageFlipSFX from "../../../assets/flip.mp3";
-import useSound from "use-sound";
+import FlipPage from 'react-flip-page';
+import pageFlipSFX from '../../assets/flip.mp3';
+import useSound from 'use-sound';
 
 export default function Flip() {
   const flipbook = React.useRef(null);

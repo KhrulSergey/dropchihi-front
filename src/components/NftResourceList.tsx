@@ -1,6 +1,6 @@
 import {FC} from 'react';
 import {INftResource} from '../models/INftResource';
-import {Link, useLocation} from '@reach/router';
+import {Link} from '@reach/router';
 
 interface NftResourceListParams {
   nftResourceList: INftResource[];

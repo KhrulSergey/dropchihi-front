@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import {createContext} from 'react';
 import ModalService from '../service/ModalService';
 
 const defaultService = new ModalService();

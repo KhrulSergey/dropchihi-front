@@ -16,14 +16,10 @@ import {useWallet} from '@solana/wallet-adapter-react';
 import {WalletDialogButton, WalletDisconnectButton} from '@solana/wallet-adapter-material-ui';
 
 //images
-import ss1 from '../assets/mint/ss1.png';
-import ss2 from '../assets/mint/ss2.png';
-import ss3 from '../assets/mint/ss3.png';
-import types_of_wallets from '../assets/mint/types_of_wallets.png';
 
 import {
-  CandyMachine,
   awaitTransactionSignatureConfirmation,
+  CandyMachine,
   getCandyMachineState,
   getCandyMachineStateViaPrivateKey,
   mintOneToken,
@@ -100,7 +96,7 @@ const MintContent = (props: {homeProps: HomeProps, routerProps: RouteComponentPr
         }
       }
     } catch (error: any) {
-      // TODO: blech:
+      // TODO: check
       let message = error.msg || 'Minting failed! Please try again!';
       if (!error.msg) {
         if (error.message.indexOf('0x138')) {

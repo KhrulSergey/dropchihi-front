@@ -8,19 +8,16 @@ import {
   getPhantomWallet,
   getSlopeWallet,
   getSolflareWallet,
-  getSolletWallet,
   getSolletExtensionWallet,
+  getSolletWallet,
 } from '@solana/wallet-adapter-wallets';
 
-import {
-  ConnectionProvider,
-  WalletProvider,
-} from '@solana/wallet-adapter-react';
+import {ConnectionProvider, WalletProvider,} from '@solana/wallet-adapter-react';
 
 import {WalletDialogProvider} from '@solana/wallet-adapter-material-ui';
 import {createTheme, ThemeProvider} from '@material-ui/core';
 import {RouteComponentProps} from '@reach/router';
-import MintContent, {HomeProps} from './MintContent';
+import MintContent from './MintContent';
 
 const treasury = new anchor.web3.PublicKey(
   process.env.REACT_APP_TREASURY_ADDRESS!

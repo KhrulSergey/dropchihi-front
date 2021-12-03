@@ -1,10 +1,6 @@
-import * as anchor from "@project-serum/anchor";
-import { Keypair, LAMPORTS_PER_SOL } from '@solana/web3.js';
-import {
-  MintLayout,
-  TOKEN_PROGRAM_ID,
-  Token,
-} from "@solana/spl-token";
+import * as anchor from '@project-serum/anchor';
+import {LAMPORTS_PER_SOL} from '@solana/web3.js';
+import {MintLayout, Token, TOKEN_PROGRAM_ID,} from '@solana/spl-token';
 import bs58 from 'bs58';
 
 export const CANDY_MACHINE_PROGRAM = new anchor.web3.PublicKey(

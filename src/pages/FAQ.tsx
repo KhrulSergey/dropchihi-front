@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from "react";
-import { Link, RouteComponentProps } from "@reach/router";
-import { Disclosure } from "@headlessui/react";
+import React, {useEffect, useRef} from 'react';
+import {Link, RouteComponentProps} from '@reach/router';
+import {Disclosure} from '@headlessui/react';
 
-import Nav from "../components/Nav";
-import Rocket from "../assets/faq/rocket.png";
-import useScrollToTop from "../lib/useScrollToTop";
+import Nav from '../components/Nav';
+import Rocket from '../assets/faq/rocket.png';
+import useScrollToTop from '../lib/useScrollToTop';
 
 function FAQ(props: RouteComponentProps) {
   const faqs = [

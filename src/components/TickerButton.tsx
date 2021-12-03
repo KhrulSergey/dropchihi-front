@@ -1,8 +1,7 @@
 import Ticker from 'react-ticker';
-import React from 'react';
-import {MouseEvent} from 'react';
+import React, {MouseEvent} from 'react';
 import {Button, makeStyles} from '@material-ui/core';
-import colors from '../../styles/colors';
+import colors from '../styles/colors';
 
 const useStyle = makeStyles((theme) => ({
   bigMintButton: {

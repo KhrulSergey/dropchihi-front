@@ -1,15 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./styles/index.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './styles/index.css';
 
-import { Router } from "@reach/router";
-import reportWebVitals from "./reportWebVitals";
-import Roadmap from "./newstaff/pages/Roadmap";
-import FAQ from "./pages/FAQ";
+import {Router} from '@reach/router';
+import reportWebVitals from './reportWebVitals';
+import Roadmap from './pages/Roadmap';
+import FAQ from './pages/FAQ';
 import Mint from './pages/Mint';
 import Landing from './pages/Landing';
-import Collection from './newstaff/pages/Collection';
-import GalleryPage from './newstaff/pages/GalleryPage';
+import Collection from './pages/Collection';
+import GalleryPage from './pages/GalleryPage';
 
 
 ReactDOM.render(

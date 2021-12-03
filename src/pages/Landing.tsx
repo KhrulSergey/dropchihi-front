@@ -1,26 +1,17 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useRef, useState} from 'react';
 
 // import GLOBE from "vanta/dist/vanta.globe.min";
-import Ticker from 'react-ticker';
 import {Link, RouteComponentProps} from '@reach/router';
-import {isMobile} from 'react-device-detect';
-import {Timeline} from 'react-twitter-widgets';
 
 import Nav from '../components/Nav';
 
 import Spaceship from '../assets/landing/spaceship.svg';
-import Avatar from '../assets/landing/team-avatar.png';
 import useScrollToTop from '../lib/useScrollToTop';
-import {testFun} from '../lib/discord/test';
-import ApiService from '../newstaff/service/ApiService';
-import useApi from '../newstaff/hooks/useApi';
-import {INftCollection} from '../newstaff/models/INftCollection';
-import {defaultModalState, IModalState} from '../newstaff/service/ModalService';
-import Flip from '../newstaff/components/DemoBook/Flip';
-import FLBookTest from '../newstaff/components/DemoBook/FLBookTest';
-import TickerButton from '../newstaff/components/TickerButton';
-import GallerySlick from '../newstaff/components/GallerySlick';
-import TeamMemberCard from '../newstaff/components/TeamMemberCard';
+import FLBookTest from '../components/DemoBook/FLBookTest';
+import TickerButton from '../components/TickerButton';
+import GallerySlick from '../components/GallerySlick';
+import TeamMemberCard from '../components/TeamMemberCard';
+import SparkleBackground from '../components/SparkleBackground';
 
 
 function Landing(props: RouteComponentProps) {
@@ -35,6 +26,7 @@ function Landing(props: RouteComponentProps) {
       <Nav/>
       <div ref={effectRef}
            className="bg-black text-white w-full h-screen flex items-center px-10 py-14 lg:px-30 lg:py-40 relative">
+        <SparkleBackground speed={'slow'} />
         <div className="max-w-5xl">
           <div className="relative">
             <div className="bg-black opacity-25 absolute inset-0 filter blur lg:hidden"></div>

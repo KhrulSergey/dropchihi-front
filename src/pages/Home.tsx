@@ -1,23 +1,23 @@
-import { useEffect, useState } from "react";
-import styled from "styled-components";
-import Countdown from "react-countdown";
-import { Button, CircularProgress, Snackbar } from "@material-ui/core";
-import Alert from "@material-ui/lab/Alert";
+import {useEffect, useState} from 'react';
+import styled from 'styled-components';
+import Countdown from 'react-countdown';
+import {Button, CircularProgress, Snackbar} from '@material-ui/core';
+import Alert from '@material-ui/lab/Alert';
 
-import * as anchor from "@project-serum/anchor";
+import * as anchor from '@project-serum/anchor';
 
-import { LAMPORTS_PER_SOL } from "@solana/web3.js";
+import {LAMPORTS_PER_SOL} from '@solana/web3.js';
 
-import { useAnchorWallet } from "@solana/wallet-adapter-react";
-import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
+import {useAnchorWallet} from '@solana/wallet-adapter-react';
+import {WalletDialogButton} from '@solana/wallet-adapter-material-ui';
 
 import {
-  CandyMachine,
   awaitTransactionSignatureConfirmation,
+  CandyMachine,
   getCandyMachineState,
   mintOneToken,
   shortenAddress,
-} from "../lib/candy-machine";
+} from '../lib/candy-machine';
 
 const ConnectButton = styled(WalletDialogButton)``;
 
@@ -117,7 +117,7 @@ const Home = (props: HomeProps) => {
         }
       }
     } catch (error: any) {
-      // TODO: blech:
+      // TODO: check
       let message = error.msg || "Minting failed! Please try again!";
       if (!error.msg) {
         if (error.message.indexOf("0x138")) {

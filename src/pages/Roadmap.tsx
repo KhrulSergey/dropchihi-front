@@ -1,14 +1,11 @@
 import React, {useEffect, useRef} from 'react';
 import {Link, RouteComponentProps} from '@reach/router';
-import Nav from '../../components/Nav';
+import Nav from '../components/Nav';
 
-import Ship from '../../assets/roadmap/ship.png';
-import RoadmapImage from '../../assets/roadmap/roadmap.svg';
-import useScrollToTop from '../../lib/useScrollToTop';
-import {Chrono} from 'react-chrono';
+import Ship from '../assets/roadmap/ship.png';
+import useScrollToTop from '../lib/useScrollToTop';
 import {TimelineItemModel} from 'react-chrono/dist/models/TimelineItemModel';
-import {Media} from 'react-chrono/dist/models/TimelineMediaModel';
-import RoadmapLine from './RoadmapLine';
+import RoadmapLine from '../components/RoadmapLine';
 
 function Roadmap(props: RouteComponentProps) {
   const headingRef = useRef<HTMLHeadingElement>(null);

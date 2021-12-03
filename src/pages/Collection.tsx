@@ -1,32 +1,20 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {Link, RouteComponentProps} from '@reach/router';
-import Nav from '../../components/Nav';
+import {RouteComponentProps} from '@reach/router';
+import Nav from '../components/Nav';
 
-import Ship from '../../assets/roadmap/ship.png';
-import RoadmapImage from '../../assets/roadmap/roadmap.svg';
-import useScrollToTop from '../../lib/useScrollToTop';
+import Ship from '../assets/roadmap/ship.png';
+import useScrollToTop from '../lib/useScrollToTop';
 import {defaultModalState, IModalState} from '../service/ModalService';
 import {INftCollection} from '../models/INftCollection';
 import useApi from '../hooks/useApi';
 import {NftResourceList} from '../components/NftResourceList';
-import RevenueShare from '../../assets/tokenomics/revenue-share.svg';
-import RoyaltyBreakdwon from '../../assets/tokenomics/royalty-breakdown-mobile.svg';
-import Summary from '../../assets/tokenomics/summary-illustration.svg';
-import SummaryMobile from '../../assets/tokenomics/summary-mobile.svg';
 import {IPage} from '../models/common';
 import {INftResource} from '../models/INftResource';
 
 
 // @ts-ignore
 import useLoadMoreOnScroll from 'react-hook-pagination';
-import {
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Avatar,
-  Typography
-} from '@material-ui/core';
+import {Button, Input, Typography} from '@material-ui/core';
 import {Skeleton} from '@material-ui/lab';
 
 function Collection(props: RouteComponentProps) {
@@ -174,7 +162,14 @@ function Collection(props: RouteComponentProps) {
             {(collection) ? collection.name : `${collectionId} old`} collection
           </span>
         </h1>
-        <Typography variant="h2">Employees</Typography>
+        {/*TODO check glowing input*/}
+        <section className="webdesigntuts-workshop">
+          <form action="" method="">
+            <Input type="search" placeholder="What are you looking for?"/>
+            <Button title={'Search'}/>
+          </form>
+        </section>
+        <Typography variant="h2">Collection</Typography>
         <img src={Ship} alt="Super Cool Spaceship" className="mt-10 mx-auto"/>
         <div className="hidden lg:block">
           <p className="text-center text-white font-orb font-black lg:text-3xl text-2xl uppercase mt-20">

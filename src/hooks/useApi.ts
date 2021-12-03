@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import { ApiServiceContext, ModalServiceContext } from "../contexts";
+import {useContext} from 'react';
+import {ApiServiceContext, ModalServiceContext} from '../contexts';
 
 const useApi = () => {
   const apiService = useContext(ApiServiceContext);

@@ -1,4 +1,3 @@
-import {RouteComponentProps} from '@reach/router';
 import HTMLFlipBook from 'react-pageflip';
 import React, {useRef, useState} from 'react';
 

@@ -4,7 +4,7 @@
 import {INftCollection} from '../models/INftCollection';
 import {IPage, IResourceQuery} from '../models/common';
 import {INftResource} from '../models/INftResource';
-import HttpUtils from './utils/HttpUtils'
+import HttpUtils from './utils/HttpUtils';
 import ModalService from './ModalService';
 
 
