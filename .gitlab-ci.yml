@@ -1,0 +1,20 @@
+image: nikolaik/python-nodejs:python3.8-nodejs12
+
+variables:
+  REGION: eu-central-1
+
+before_script:
+  - npm i
+
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  only:
+    refs:
+      - master
+  script:
+    - pip3 install awscli
+    - CI=false npm run build
+    - aws --region $REGION s3 cp --recursive ./build/ s3://dropchichi-front/
