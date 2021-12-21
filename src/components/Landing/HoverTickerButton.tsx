@@ -15,10 +15,9 @@ const HoverTickerButton = (props: ITickerButtonProps) => {
   return (
     <Button className="" {...props}>
       <div
-        className="bg-black mt-8 text-white rounded-xl pt-7"
+        className="bg-black mt-8 m:w-288 w-428 text-white rounded-xl pt-7"
         style={{
           height: '89px',
-          width: '428px',
           verticalAlign: 'baseline',
         }}
         onMouseEnter={() => setIsMove(true)}

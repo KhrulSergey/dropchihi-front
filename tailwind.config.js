@@ -1,7 +1,25 @@
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
+  mode: 'jit',
   theme: {
+    screens: {
+      m: { max: '1024px' },
+      sm: '640px',
+      // => @media (min-width: 640px) { ... }
+
+      md: '768px',
+      // => @media (min-width: 768px) { ... }
+
+      lg: '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      xl: '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
     fontFamily: {
       spot: ['Spot'],
     },
@@ -49,6 +67,9 @@ module.exports = {
         button: ['24px', '28px'],
         sm: ['22px', '32px'],
         xl: ['64px', '78px'],
+        mobilexl: ['32px', '40px'],
+        mobilesm: ['18px', '32px'],
+        mobilebutton: ['16px', '19px'],
       },
       inset: {
         '567.08px': '567.08px',
@@ -56,10 +77,28 @@ module.exports = {
         '749px': '749px',
         '328.76px': '328.76px',
         '681.25px': '681.25px',
+        '867.25px': '867.25px',
         '928.51px': '928.51px',
         '1129.22px': '1129.22px',
         '558.89px': '558.89px',
         '1340.51px': '1340.51px',
+        '109.55px': '109.55px',
+        '85.55px': '85.55px',
+        '782.08px': '782.08px',
+        '244.76px': '244.76px',
+        '882px': '882px',
+      },
+      height: {
+        50: '50px',
+        288: '288px',
+        428: '428px',
+        155: '155.5px',
+      },
+      width: {
+        50: '50px',
+        288: '288px',
+        428: '428px',
+        216: '216.42px',
       },
     },
   },
